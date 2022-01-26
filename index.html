@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link REL="stylesheet" TYPE="text/css" HREF="style.css">
+</head>
+
+<body class="styleBody">
+
+<h1 class="stext1">The store of iPhone</h1>
+<h2 class="stext2">Choose your iPhone!</h2>
+
+<table id="table" class="table">
+    <tr>
+    <th>Model</th>
+    <th>Price</th> 
+    <th>Display</th>
+    <th>Camera</th>
+    <th>Storage</th>
+    <th>Batary</th>
+    </tr>
+    <tr>
+        <td>iPhone 13 Pro Max</td>
+        <td>1099€</td>
+        <td>6.7-inch (2778x1284), Full HD, OLED</td>
+        <td>(12MP F/2.80, 12MP F/1.50, 12MP F/1.80) + 12MP TrueDepth front camera</td>
+        <td>1Tb+6Gb</td>
+        <td>4352 mA⋅h</td>
+    </tr>
+    <tr>
+        <td>iPhone 12</td>
+        <td>799€</td>
+        <td>6.1-inch (2532x1170), Full HD, OLED</td>
+        <td>(12MP 2x F/2.40, 12MP F/1.60) + 12MP front camera</td>
+        <td>256Gb+4Gb</td>
+        <td>2815 mA⋅h</td>
+    </tr>
+    <tr>
+        <td>iPhone 11</td>
+        <td>499€</td>
+        <td>6.1-inch (1792x828), HD, IPS</td>
+        <td>12MP 2x F/2.40, 12MP F/1.80) + 12MP front camera</td>
+        <td>256Gb+4Gb</td>
+        <td>3110 mA⋅h</td>
+    </tr>
+</table> 
+
+<script>
+function highlight(e) {
+    if (selected[0]) selected[0].className = '';
+    e.target.parentNode.className = 'selected';
+}
+
+var table = document.getElementById('table'),
+    selected = table.getElementsByClassName('selected');
+table.onclick = highlight;
+</script>
+  <br><br>
+  <button type="button" onclick="alert('goods are in the cart!')" class="button">Buy!</button>
+
+</body>
+</html>
